@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purvadeepsinh Gohil | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
+  <script>
+    // Check if user has a saved theme preference
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <script defer src="script.js"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 via-white to-purple-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-white/80 dark:bg-gray-800/80 shadow-lg backdrop-blur z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <div class="font-bold text-2xl tracking-wide text-blue-700 dark:text-blue-300">Portfolio</div>
+      <ul class="flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#education" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Education</a></li>
+        <li><a href="#internship" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Internship</a></li>
+        <li><a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#certificates" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Certificates</a></li>
+        <li><a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <div class="flex items-center space-x-4">
+        <button id="theme-toggle" class="focus:outline-none p-2 rounded-full hover:bg-blue-100 dark:hover:bg-gray-700 transition">
+          <span id="theme-icon" class="material-icons">dark_mode</span>
+        </button>
+        <a href="images/Purvadeep Resume.pdf" download class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded shadow hover:from-blue-600 hover:to-purple-600 transition font-semibold">Download Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="pt-36 pb-16 flex flex-col items-center text-center bg-transparent">
+    <div class="w-48 h-48 bg-gradient-to-br from-blue-300 to-purple-300 dark:from-blue-900 dark:to-purple-900 rounded-full mb-6 flex items-center justify-center shadow-lg border-4 border-white dark:border-gray-800 overflow-hidden">
+      <!-- Profile Image -->
+      <img src="images/profile-image.jpeg" alt="Purvadeepsinh Gohil" class="w-full h-full object-cover rounded-full">
+    </div>
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-2 bg-gradient-to-r from-blue-700 to-purple-600 bg-clip-text text-transparent">Purvadeepsinh Gohil</h1>
+    <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-blue-700 dark:text-blue-300">Student | Aspiring Computer Engineer</h2>
+    <p class="max-w-xl mb-4 text-lg text-gray-700 dark:text-gray-200">Dedicated and curious student seeking opportunities to apply my skills and knowledge in a dynamic and innovative environment.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="bg-white/80 dark:bg-gray-800/80 px-3 py-1 rounded shadow text-gray-800 dark:text-gray-200">Bhavnagar, Gujarat, India</span>
+      <span class="bg-white/80 dark:bg-gray-800/80 px-3 py-1 rounded shadow text-gray-800 dark:text-gray-200">purvadeepsinh095@gmail.com</span>
+      <span class="bg-white/80 dark:bg-gray-800/80 px-3 py-1 rounded shadow text-gray-800 dark:text-gray-200">+91 73594 14748</span>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <h3 class="font-semibold mb-2">Programming Languages</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-200">
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Web Development</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-200">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>PHP</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold mb-2">Mobile Development</h3>
+            <ul class="list-disc list-inside text-gray-700 dark:text-gray-200">
+              <li>Flutter & Dart</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Education</h2>
+        <ul class="space-y-4">
+          <li>
+            <div class="font-semibold">Christ School, Bhavnagar <span class="text-sm text-gray-500">(2009–2020)</span></div>
+            <div class="text-sm">Secondary Education (SSC)</div>
+          </li>
+          <li>
+            <div class="font-semibold">Sir Bhavsinhji Polytechnic Institute <span class="text-sm text-gray-500">(2020–2023)</span></div>
+            <div class="text-sm">Diploma in IT, CGPA 7.02</div>
+          </li>
+          <li>
+            <div class="font-semibold">Gyanmanjari Institute of Technology <span class="text-sm text-gray-500">(2023–Present)</span></div>
+            <div class="text-sm">B.E. in Computer Engineering</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internship Section -->
+  <section id="internship" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Internship</h2>
+        <ul class="space-y-6">
+          <li>
+            <div class="font-semibold">Intel AI for Manufacturing <span class="text-sm text-gray-500">(15 days)</span></div>
+            <div class="text-sm text-gray-600 dark:text-gray-300 mb-2">AI for Manufacturing Internship</div>
+            <a href="images/intel-certificate.pdf" download class="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded shadow hover:from-blue-600 hover:to-purple-600 transition font-semibold text-sm">Download Certificate</a>
+          </li>
+          <li>
+            <div class="font-semibold">Yuga Yatra Retail (OPC) Pvt. Ltd. <span class="text-sm text-gray-500">(2 months)</span></div>
+            <div class="text-sm text-gray-600 dark:text-gray-300">Retail Operations Internship</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Projects</h2>
+        <ul class="space-y-4">
+          <li>
+            <div class="font-semibold">Online Movie Ticket Booking System <span class="text-sm text-gray-500">(Diploma Project, 2022)</span></div>
+          </li>
+          <li>
+            <div class="font-semibold">Intel AI Carbon Emission Forecasting System <span class="text-sm text-gray-500">(Intel AI Project, 2024)</span></div>
+            <div class="text-sm text-gray-600 dark:text-gray-300 mb-2">AI-powered CO2 emission forecasting system using Python and machine learning</div>
+            <a href="https://github.com/pjg095/AI-intel-.git" target="_blank" class="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded shadow hover:from-blue-600 hover:to-purple-600 transition font-semibold text-sm">View on GitHub</a>
+          </li>
+          <li>
+            <div class="font-semibold">Helping Hand NGO Portal <span class="text-sm text-gray-500">(Bachelor Project, 2024–Present)</span></div>
+            <div class="text-sm text-gray-600 dark:text-gray-300 mb-2">NGO portal for donation management and volunteer coordination</div>
+            <a href="https://github.com/pjg095/helpingHand.git" target="_blank" class="inline-block bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded shadow hover:from-blue-600 hover:to-purple-600 transition font-semibold text-sm">View on GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Certificates</h2>
+        <ul class="space-y-4">
+          <li>
+            <div class="font-semibold">"Building the Next Big App" – TecBairn <span class="text-sm text-gray-500">(Apr 2024)</span></div>
+          </li>
+          <li>
+            <div class="font-semibold">Microsoft Learn Student Ambassador <span class="text-sm text-gray-500">(Feb 2024)</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-6">
+      <div class="bg-white/90 dark:bg-gray-800/90 rounded-2xl shadow-xl p-8">
+        <h2 class="text-2xl font-bold mb-6 text-blue-700 dark:text-blue-300">Contact</h2>
+        <form class="max-w-xl mx-auto space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring bg-white dark:bg-gray-900" required />
+          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring bg-white dark:bg-gray-900" required />
+          <textarea placeholder="Your Message" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring bg-white dark:bg-gray-900" rows="4" required></textarea>
+          <button type="submit" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded shadow hover:from-blue-600 hover:to-purple-600 transition font-semibold">Send Message</button>
+        </form>
+        <div class="mt-8">
+          <h3 class="font-semibold mb-2">Languages</h3>
+          <ul class="flex flex-wrap gap-4 text-gray-700 dark:text-gray-200">
+            <li>English – Full Professional Proficiency</li>
+            <li>Hindi – Full Professional Proficiency</li>
+            <li>Gujarati – Full Professional Proficiency</li>
+          </ul>
+          <h3 class="font-semibold mt-6 mb-2">Interests & Hobbies</h3>
+          <ul class="flex flex-wrap gap-4 text-gray-700 dark:text-gray-200">
+            <li>Traveling</li>
+            <li>Stamp & Currency Collection</li>
+            <li>Flutter App Development</li>
+            <li>UI/UX Design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center bg-gradient-to-r from-blue-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 text-gray-500 dark:text-gray-400 mt-8 shadow-inner">
+    &copy; 2025 Purvadeepsinh Gohil. All rights reserved.
+  </footer>
+
+  <!-- Material Icons for theme toggle -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html> 
